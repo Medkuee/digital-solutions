@@ -1,0 +1,149 @@
+.OpenPity {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    163deg,
+    rgba(255, 255, 255, 1) 17%,
+    rgba(121, 110, 9, 1) 62%,
+    rgba(255, 149, 0, 1) 100%
+  );
+  color: #fff;
+}
+.OpenPity__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  color: black;
+}
+.OpenPity__header h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.OpenPity__header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.OpenPity__header__content span {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.OpenPity__header__content img {
+  width: 70%;
+}
+.OpenPity__bottom {
+  width: 80%;
+}
+.OpenPity__bottom__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin: 120px 0;
+}
+.OpenPity__bottom__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 120px 0;
+}
+
+.OpenPity__left__img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+.OpenPity__right__img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.OpenPity__left__text {
+  padding: 0 20px;
+  z-index: 123;
+  width: 40%;
+}
+.OpenPity__right__text {
+  padding: 0 40px;
+  z-index: 123;
+  width: 40%;
+}
+.OpenPity__realImg {
+  width: 60%;
+}
+.fadey1 {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .OpenPity__bottom {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .OpenPity__left__text h1,
+  .OpenPity__right__text h1 {
+    font-size: 24px;
+  }
+  .OpenPity__left__text span,
+  .OpenPity__right__text span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 764px) {
+  .OpenPity__header h1 {
+    font-size: 24px;
+  }
+  .OpenPity__header__content__span {
+    font-size: 14px;
+  }
+  .OpenPity__left__img,
+  .OpenPity__right__img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .OpenPity__left__text,
+  .OpenPity__right__text {
+    padding: 0 20px;
+    z-index: 123;
+    width: 90%;
+  }
+
+  .OpenPity__realImg {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .OpenPity__header h1 {
+    font-size: 20px;
+  }
+  .OpenPity__header__content__span {
+    font-size: 12px;
+  }
+  .OpenPity__header__content img {
+    width: 80%;
+  }
+  .OpenPity__header__content {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 501px) {
+  .OpenPity__left__text h1,
+  .OpenPity__right__text h1 {
+    font-size: 18px;
+  }
+  .OpenPity__left__text span,
+  .OpenPity__right__text span {
+    font-size: 12px;
+  }
+}

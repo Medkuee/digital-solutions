@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+.home__video {
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: -1;
+}

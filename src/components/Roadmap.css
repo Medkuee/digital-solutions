@@ -1,0 +1,156 @@
+:root {
+  --clr-primary-5: #01bf71;
+  --clr-primary-10: hsl(186, 100%, 94%);
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+}
+
+.roadmap {
+  width: 100vw;
+  height: 100vh;
+  z-index: 23123123;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.section {
+  color: #fff;
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: var(--max-width);
+  background: rgba(56, 55, 55, 0.096);
+}
+
+.underline {
+  width: 7rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  margin-bottom: 4rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.jobs-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+.job-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: darkgray;
+  font-size: 1.25rem;
+  letter-spacing: var(--spacing);
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  padding: 0.25rem 0;
+  line-height: 1;
+  outline-color: var(--clr-primary-10);
+}
+.job-btn:hover {
+  color: var(--clr-primary-5);
+  box-shadow: 0 2px var(--clr-primary-5);
+}
+.active-btn {
+  color: var(--clr-primary-5);
+  box-shadow: 0 2px var(--clr-primary-5);
+}
+
+.job-info h3 {
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 1.35rem;
+}
+
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.job-desc p {
+  margin-bottom: 0;
+}
+.job-icon {
+  color: var(--clr-primary-5);
+}
+.roadmap__list {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .jobs-center {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 4rem;
+  }
+  .section {
+    width: 95vw;
+  }
+  .btn-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .job-btn {
+    margin-bottom: 1rem;
+  }
+  .active-btn {
+    box-shadow: -2px 0 var(--clr-primary-5);
+  }
+  .job-btn:hover {
+    box-shadow: -2px 0 var(--clr-primary-5);
+  }
+}
+@media screen and (max-width: 940px) {
+  .title h2 {
+    font-size: 24px !important;
+  }
+  .roadmap__list {
+    font-size: 14px;
+  }
+  .title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .btn-container {
+    margin-bottom: 2rem;
+  }
+  .job-info h3 {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .title h2 {
+    font-size: 22px !important;
+  }
+  .job-btn {
+    font-size: 1rem;
+  }
+  .job-info h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+}

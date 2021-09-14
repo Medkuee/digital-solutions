@@ -1,0 +1,236 @@
+.simulatory {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/bg3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+.simulatory__header {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.simulatory__header h1 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.simulatory__header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.simulatory__header__content span {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.simulatory__header__content img {
+  width: 95%;
+}
+.fadey1 {
+  margin-top: 20px;
+}
+.fadey2 {
+  margin: 20px;
+}
+.fadey3 {
+  width: 100%;
+}
+.simulatory__bottom {
+  width: 80%;
+  margin: 70px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0;
+}
+.simulatory__bottom .simulatory__bottom__box {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.simulatory__bottom .simulatory__bottom__box .simulatory__bottom__imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.simulatory__bottom .simulatory__bottom__box .simulatory__bottom__imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+}
+.simulatory__bottom
+  .simulatory__bottom__box:hover
+  .simulatory__bottom__imgBox
+  img {
+  transform: scale(1.2);
+}
+.simulatory__bottom .simulatory__bottom__box .simulatory__bottom__details {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.simulatory__bottom
+  .simulatory__bottom__box:hover
+  .simulatory__bottom__details {
+  opacity: 1;
+}
+.simulatory__bottom
+  .simulatory__bottom__box
+  .simulatory__bottom__details
+  .simulatory__bottom__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.simulatory__bottom
+  .simulatory__bottom__box
+  .simulatory__bottom__details
+  .simulatory__bottom__content
+  h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ff0;
+}
+.simulatory__bottom
+  .simulatory__bottom__box
+  .simulatory__bottom__details
+  .simulatory__bottom__content
+  p {
+  margin: 10px 0 0;
+  padding: 0;
+}
+.simulatory__links,
+.simulatory__links2 {
+  padding: 5px 0;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.246);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(172, 172, 36);
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+}
+.simulatory__links {
+  width: 20%;
+}
+.simulatory__links2 {
+  width: 30%;
+}
+
+.simulatory__links h5,
+.simulatory__links2 h5 {
+  font-size: 16px;
+}
+.simulatory__links:hover,
+.simulatory__links2:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #ff0;
+}
+
+@media screen and (max-width: 1200px) {
+  .simulatory__header {
+    width: 90%;
+  }
+  .simulatory__bottom
+    .simulatory__bottom__box
+    .simulatory__bottom__details
+    .simulatory__bottom__content
+    h2 {
+    font-size: 18px;
+  }
+  .simulatory__bottom
+    .simulatory__bottom__box
+    .simulatory__bottom__details
+    .simulatory__bottom__content
+    p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .simulatory__header__content h1 {
+    font-size: 24px;
+  }
+  .simulatory__header__content span {
+    font-size: 14px;
+  }
+  .simulatory__links h5,
+  .simulatory__links2 h5 {
+    font-size: 13px;
+  }
+  .simulatory__bottom {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .simulatory__header__content h1 {
+    font-size: 22px;
+  }
+  .simulatory__header__content span {
+    font-size: 12px;
+  }
+  .simulatory__bottom {
+    flex-direction: column;
+    width: 70%;
+  }
+  .simulatory__header {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .simulatory__bottom {
+    width: 90%;
+  }
+  .simulatory__header {
+    width: 90%;
+  }
+  .simulatory__bottom
+    .simulatory__bottom__box
+    .simulatory__bottom__details
+    .simulatory__bottom__content
+    p {
+    font-size: 11px;
+  }
+  .simulatory__bottom {
+    width: 95%;
+    margin-right: 15px;
+  }
+  .simulatory__links h5,
+  .simulatory__links2 h5 {
+    font-size: 10px;
+  }
+  .simulatory__links2 {
+    width: 35%;
+  }
+}

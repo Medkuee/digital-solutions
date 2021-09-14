@@ -1,0 +1,33 @@
+.social {
+  position: fixed;
+  right: 0;
+}
+
+.social__atag {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.social__atag:hover {
+  color: black;
+  background: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .social__atag {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .social__atag {
+    padding: 7px;
+    font-size: 13px;
+  }
+}

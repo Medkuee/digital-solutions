@@ -1,0 +1,75 @@
+.skills {
+  width: 100vw;
+  height: 100vh;
+  z-index: 23123123;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.skills__skills {
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+.skills__percent {
+  padding: 12px 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: black;
+  margin-right: -2px;
+}
+.skills__h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.skills__h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.skills__progress {
+  width: 100% !important;
+  flex: 1 !important;
+  margin-right: 30px;
+}
+.skills__des {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 770px) {
+  .skills__skills {
+    width: 95%;
+  }
+  .skills__percent {
+    padding: 8px 7px;
+    font-size: 13px;
+  }
+  .skills__des {
+    font-size: 14px;
+  }
+  .skills__progress {
+    margin-right: 15px;
+  }
+  .skills__h3 {
+    font-size: 18px;
+  }
+  .skills__h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .skills__corres {
+    width: 90% !important;
+  }
+}
